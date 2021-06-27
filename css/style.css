@@ -340,13 +340,18 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 0px;
-    padding: 0 30px 15px 15px;
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    padding: 7px;
+    border-radius: 2px;
+    background-color: #dfdfdf;
+    opacity: 0.8;
 }
 .back-top a {
     text-decoration: none;
-    color: #b1b1b1;
-    font-size: 15px;
+    color: #fff;
+    font-size: 12px;
 }
 .back-top a:hover {
     text-decoration: underline;
