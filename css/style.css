@@ -56,35 +56,35 @@ a:hover {
     width: auto;
 }
 
-.social_bar {
+.nav-bar {
     background: #f6f6f6;
 }
-.social_bar ul {
+.nav-bar ul {
     display: flex;
     justify-content: flex-end;
 }
-.social_bar ul li {
+.nav-bar ul li {
     margin: 5px;
 }
-.social_bar li a {
+.nav-bar li a {
     font-size: 14px;
     display: flex;
     align-items: center;
 }
-.social_fb {
+#nav-bar-fb {
     border-right: 1px solid #cccccc;
     padding-right: 8px;
 }
-.social_fb_text {
+#nav-bar_fb-text {
     padding-left: 3px;
     color: #3b5998;
 }
-.social_tt_text {
+#nav-bar_tt-text {
     padding-left: 3px;
     color: #26a7de;
 }
 
-.nav_bar {
+.header {
     background: #fff;
     margin: 0 auto;
     padding: 0px;
@@ -93,20 +93,20 @@ a:hover {
     justify-content: space-between;
     align-items: flex-start;
 }
-.nav_options {
+.header-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.nav_options li {
+.header-menu li {
     width: 100px;
     text-align: center;
 }
-.nav_options a {
+.header-menu a {
     text-align: center;
     transition: all .5s;
 }
-.nav_button {
+.menu-btn {
     display: block;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -114,23 +114,23 @@ a:hover {
     font-weight: bold;
     border-bottom: 3px solid #fff;
 }
-.nav_button:hover, .nav_button.active {
+.menu-btn:hover, .menu-btn.active {
     border-bottom: 3px solid #00cc99;
 }
-.nav_dropdown {
+.menu-dropdown {
     display: none;
 }
-.nav_dropdown li {
+.menu-dropdown li {
     height: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
     transition: all .5s;
 }
-.nav_dropdown li:hover {
+.menu-dropdown li:hover {
     background-color: rgb(250, 250, 250);
     cursor: pointer;
 }
-.nav_dropdown a {
+.menu-dropdown a {
     font-size: 12px;
     color: #383838;
 }
@@ -192,14 +192,14 @@ a:hover {
     padding-top: 80px;
     padding-bottom: 80px;
 }
-.course_item {
+.course-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
     box-shadow: 0 4px 8px -2px #b1b1b1;
 }
-.course_icon {
+.course-icon {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -209,63 +209,63 @@ a:hover {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.course_text {
+.course-text {
     width: 100%;
     padding-bottom: 20px;
 }
-.course_text h2 {
+.course-text h2 {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
     padding-bottom: 12px;
 }
-.course_text p {
+.course-text p {
     text-align: left;
     line-height: 1.4;
     padding: 0 20px 0 20px;
 }
-.course_text span {
+.course-text span {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.course_text li {
+.course-text li {
     list-style-type:initial;
     line-height: 1.4;
     margin-left: 40px;
 }
 
-.table_block {
+.table-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
 }
-.table_block h1 {
+.table-wrap h2 {
     text-align: center;
     font-size: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.compare_table th, .compare_table td{
+.compare-table th, .compare-table td{
     font-size: 18px;
     text-align: left;
     padding: 15px 100px 15px 30px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
-.compare_table th {
+.compare-table th {
     font-weight: bold;
     background-color: #f7f7f7;
 }
-.compare_table .hl {
+.compare-table .hl {
     color: #00cc99;
 }
 
-.form_block {
+.form-wrap {
     background: linear-gradient(45deg, #58bd93 0%, #29624c 100%);
 }
-.form_block h1 {
+.form-wrap h2 {
     color: #fff;
     font-size: 40px;
     line-height: 1.4;
@@ -273,12 +273,12 @@ a:hover {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.form_wrap {
+.contact-form {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.form_wrap textarea {
+.contact-form textarea {
     width: 600px;
     height: 400px;
     margin-right: 40px;
@@ -287,24 +287,24 @@ a:hover {
     border-color: transparent;
 }
 
-.contact_form {
+.contact-form-input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 600px;
     height: 400px;
 }
-.contact_form label {
+.contact-form-input label {
     color: #fff;
     font-size: 22px;
 }
-.contact_form #name, .contact_form #phone, .contact_form #email {
+.contact-form-input #name, .contact-form-input #phone, .contact-form-input #email {
     height: 40px;
     border: transparent;
     font-size: 20px;
     padding-left: 10px;
 }
-.contact_form #submit {
+.contact-form-input .contact-form-submit {
     margin-left: 80%;
     margin-top: 20px;
     width: 20%;
@@ -315,7 +315,7 @@ a:hover {
     color: #fff;
     background-color: #5cc99c;
 }
-.contact_form #submit:hover {
+.contact-form-input .contact-form-submit:hover {
     cursor: pointer;
     background-color: #5cbd94;
 }
@@ -330,24 +330,24 @@ a:hover {
     height: 36px;
     width: auto;
 }
-.footer p {
+.footer li {
     line-height: 1.2;
 }
-.footer p span {
+.footer li a {
     color: #ce0076;
 }
-.back_top {
+.back-top {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 0px;
     padding: 0 30px 15px 15px;
 }
-.back_top a {
+.back-top a {
     text-decoration: none;
     color: #b1b1b1;
     font-size: 15px;
 }
-.back_top a:hover {
+.back-top a:hover {
     text-decoration: underline;
 }
