@@ -1,6 +1,10 @@
 $(document).ready(function(){
     $('.menu-btn').click(function (e) { 
         e.preventDefault();
+
+        $(this).parent().siblings().find('a').removeClass('active');
+        $(this).parent().siblings().find('ul').slideUp();
+
         $(this).toggleClass('active');
         $(this).siblings().slideToggle();
     });
